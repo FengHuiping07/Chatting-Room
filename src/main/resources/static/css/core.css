@@ -1,0 +1,63 @@
+ul{
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    clear:both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+#dialog{
+    border-radius:8px;
+    background: linear-gradient(60deg,rgba(22,64,123,0.9),rgba(120,65,24,46));
+    width: 250px;
+    height: 100px;
+    box-shadow: 0 0 8px burlywood;
+    position: absolute;
+    z-index: 10;
+    left: calc(50% - 125px);
+    top: calc(50% - 50px);
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    animation: mydialog 1s ;
+    animation-fill-mode:forwards;/*让动画保留最后一帧*/
+}
+@keyframes mydialog {
+    10%,40%,70%{
+        /*transform: rotate(5deg);*/
+        background: #ff5018;
+
+    }
+    20%,30%,50%{
+        /*transform:rotate(-5deg) ;*/
+        background: #ff7c05;
+    }
+
+  60%,80%,90%{
+      background: #ff5018;
+
+      /*transform: rotate(0deg) ;*/
+  }
+    100%{
+        translateY:800px;
+        visibility: hidden;
+        background: #ff3d03;
+
+    }
+
+
+}
+.rltv{
+    position: relative;
+}
+
